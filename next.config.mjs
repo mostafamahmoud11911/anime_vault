@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.ebayimg.com",
+        hostname: "scontent.fdxb1-1.fna.fbcdn.net",
       },
       {
         protocol: "https",

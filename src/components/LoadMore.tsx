@@ -3,7 +3,6 @@ import { fetchAnime } from "@/app/action";
 import Image from "next/image";
 import { ReactNode, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import AnimeCard, { AnimeProp } from "./AnimeCard";
 let page = 2;
 
 
@@ -19,7 +18,6 @@ function LoadMore() {
         .then((res) => {
           setData([...data, ...res]);
           page++;
-          console.log(page)
         })
         .catch((error) => {
           console.log(error);
